@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Report Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lab Report Generator</h1>
+        <form id="labReportForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="rollNo">Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" required>
+
+            <label for="registrationNo">Registration No:</label>
+            <input type="text" id="registrationNo" name="registrationNo" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" required>
+
+            <label for="semester">Semester:</label>
+            <input type="text" id="semester" name="semester" required>
+
+            <label for="session">Session:</label>
+            <input type="text" id="session" name="session" placeholder="Eg: 2022 to 2026" required>
+
+            <label for="submittedTo">Submitted To:</label>
+            <input type="text" id="submittedTo" name="submittedTo" required>
+
+            <button type="button" onclick="generateReport()">Generate Report</button>
+        </form>
+
+        <div id="report" class="report hidden">
+            <div id="reportContent" class="report-content">
+                <h1>PURNEA COLLEGE OF ENGINEERING </h1>
+                <h1>PURNEA</h1>
+                <img src="logo.png" alt="College Logo" id="logo">
+                <h2>LAB REPORT</h2>
+                <p>Name: <span id="displayName"></span></p>
+                <p>Roll No: <span id="displayRollNo"></span></p>
+                <p>Registration No: <span id="displayRegistrationNo"></span></p>
+                <p>Subject: <span id="displaySubject"></span></p>
+                <p>Branch: <span id="displayBranch"></span></p>
+                <p>Semester: <span id="displaySemester"></span></p>
+                <p>Session: <span id="displaySession"></span></p>
+                <p>Submitted To: <span id="displayTeacherName"></span></p>
+                <p>Submitted By: <span id="displayName2"></span></p>
+            </div>
+            <button type="button" onclick="downloadPDF()">Download PDF</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

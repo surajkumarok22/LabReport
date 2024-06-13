@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.report {
+    margin-top: 30px;
+}
+
+.report-content {
+    text-align: left;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.report-content h1{
+    /* margin-bottom: ; */
+    font-family: 'Courier New', Courier, monospace;
+    text-wrap: nowrap;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.report-content h2{
+    margin-top: -5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-wrap: nowrap;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.report-content img{
+    align-items: center;
+    margin-left: 160px;
+}
+
+.hidden {
+    display: none;
+}
+
